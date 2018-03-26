@@ -1,5 +1,7 @@
 import React from "react";
 import { Component } from "react";
+import PieChart from "./PieChart/PieChart";
+import LineChart from "./LineChart/LineChart";
 
 class Chart extends Component {
   constructor(props) {
@@ -11,8 +13,9 @@ class Chart extends Component {
 
   render() {
     return (
-      <div>     
-         Charts
+      <div>
+         <PieChart/>
+         <LineChart/>
       </div>
     );
   }

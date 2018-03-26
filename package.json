@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "c3": "^0.5.1",
     "detect-node": "^2.0.3",
     "es-to-primitive": "^1.1.1",
     "hpack.js": "^2.1.6",
