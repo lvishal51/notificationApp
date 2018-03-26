@@ -1,11 +1,11 @@
 import React from "react";
 import { Component } from "react";
-import Chart from '../Dashboard/Charts';
-import Mystock from '../Dashboard/MyStock';
-import Stocktable from '../Dashboard/StockTable';
-import UserInfo from '../Dashboard/UserInfo';
-import Buy from '../Dashboard/Buy';
-import Sell from '../Dashboard/Sell';
+import Chart from '../charts/Charts';
+import Mystock from './stock-list/MyStock';
+import Stocktable from './stock-list/StockTable';
+import UserInfo from './UserInfo';
+import Buy from './Buy';
+import Sell from './Sell';
 
 
 
