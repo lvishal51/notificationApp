@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Maruti",   
+    "stockinfo": "http://www.maruti.com",
+    "stockprize": "8900"
+  },
+  {
+    "id": 2,
+    "name": "HDFCLIFE",   
+    "stockinfo": "http://www.hdfclife.com",
+    "stockprize": "480" 
+  },
+  {
+    "id": 3,
+    "name": "hudco",   
+    "stockinfo": "http://www.hudco.com",
+    "stockprize": "70"  
+  },
+  {
+    "id": 4,
+    "name": "trident",   
+    "stockinfo": "http://www.trident.com",
+    "stockprize": "131"  
+  },
+  {
+    "id": 5,
+    "name": "trigen",   
+    "stockinfo":"http://www.trigen.com",
+    "stockprize": "60"
+  },
+  {
+    "id": 6,
+    "name": "LNT",   
+    "stockinfo": "http://www.lnt.com",
+    "stockprize": "345"   
+  },
+  {
+    "id": 7,
+    "name": "cdsl",   
+    "stockinfo": "http://www.cdsl.com",
+    "stockprize": "283"   
+  },
+  {
+    "id": 8,
+    "name": "cdsl",   
+    "stockinfo": "http://www.cdsl.com",
+    "stockprize": "283"   
+  },
+  {
+    "id": 9,
+    "name": "cdsl",   
+    "stockinfo": "http://www.cdsl.com",
+    "stockprize": "283"   
+  }
+  ,{
+    "id": 10,
+    "name": "cdsl",   
+    "stockinfo": "http://www.cdsl.com",
+    "stockprize": "283"   
+  }
+]
