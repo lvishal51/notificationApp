@@ -250,6 +250,54 @@ border: none;
 .orangebtn{
 	
 	background-color: rgb(244, 67, 54) !important;
-	border: 1px solid rgb(244, 67, 54) !important;
-  
+	border: 1px solid rgb(244, 67, 54) !important;  
+}
+
+/*Dashboard*/
+.wrapper{
+	padding: 0;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1366px;
+}
+.logo{
+	float: left;  
+    margin: 10px 20px 0 0px; 
+   
+}
+.logo img{ 
+width: auto;
+height: 20px;
+}
+.right-nav{
+	float: left;
+}
+.app-nav{
+	float: left;
+    margin: 5px 10px 15px 155px;     
+    text-align: right;
+    border-right: 1px solid #e3e3e3;
+}
+.app-nav a{
+padding: 0 15px;
+    font-size: .75rem;
+    line-height: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: #4a4a4a;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+	justify-content: center;
+}
+.notifications-menu{
+	float: left;
+}
+.user-nav{
+	float: left;
+	margin-top: 7px;
+}
+.app-nav a:hover{
+cursor: pointer;
+color: #ff5722;
 }
