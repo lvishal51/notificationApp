@@ -1,9 +1,8 @@
 /* Custom CSS */
 
 .pie-summary {
-
-    width: 600px;
-    float: right;
+  position: relative;
+  clear: both;
 }
 
 .chart-title {

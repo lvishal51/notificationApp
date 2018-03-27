@@ -232,10 +232,11 @@ border: none;
 } */
 .buysellbtn{
 	font-size: 11px;
-    padding: 4px 12px;
-   
+	padding: 5px 17px;
+	border-radius: 2px;
     border: none;
-    color: white;
+	color: white;
+	letter-spacing: .5px;
     font-weight: bold;
 }
 .text-center {
