@@ -2,6 +2,7 @@ import React from "react";
 import { Component } from "react";
 import { BootstrapTable, TableHeaderColumn } from "react-bootstrap-table";
 import InputModal from '../../modal/InputModal';
+import MockData from '../../../mockData.json';
 import Constants from "../../../common/Constants";
 
 
@@ -17,7 +18,6 @@ class Stocktable extends Component {
     this.cellButtonForBuy = this.cellButtonForBuy.bind(this);
     this.cellButtonForSell = this.cellButtonForSell.bind(this);
   }
-
   cellButtonForBuy(cell, row) {
     return <button className="buysellbtn bluecolor" onClick={() => this.handleopenModal(row, 'Buy')}>B</button>;
   }
@@ -31,7 +31,8 @@ class Stocktable extends Component {
     this.setState({ isOpenModal: false, selectedCandidate: {}, compName: null });
   }
   componentDidMount = () => {
-    let URL = Constants.URL;
+
+    /*     let URL = Constants.URL;
     var self = this;
     fetch(URL)
       .then(function (response) {
@@ -41,6 +42,8 @@ class Stocktable extends Component {
       .then(function (json) {
         self.setState({ list: json });
       });
+ */      
+      this.setState({ list : MockData.stockData })
   };
   render() {
 
