@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Login from '../src/components/login/Login';
-import Dashboard from '../src/components/Dashboard/Dashboard';
-import '../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
+import LoginForm from '../login/Login';
+import Dashboard from '../Dashboard/Dashboard';
+import '../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends Component {
@@ -16,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Login/>
+        <LoginForm/>
       </div>
     );
   }

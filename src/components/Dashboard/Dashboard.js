@@ -1,11 +1,24 @@
 import React from "react";
 import { Component } from "react";
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import Chart from '../charts/Charts';
 import Mystock from '../Dashboard/stock-list/MyStock';
 import Stocktable from '../Dashboard/stock-list/StockTable';
 import UserInfo from '../Dashboard/UserInfo';
 import Buy from '../Dashboard/Buy';
 import Sell from '../Dashboard/Sell';
+import getStocks from '../../actions/actions'
+
+const mapStateToProps = function (store) {
+	return { stocks: store.stocks.stocks }
+}
+
+function mapDispatchToProps(dispatch) {
+	return bindActionCreators({
+		getStocks: getStocks,
+	}, dispatch);
+}
 
 class Dashboard extends Component {
   constructor(props) {
@@ -15,6 +28,15 @@ class Dashboard extends Component {
     };
   }
 
+  componentDidMount() {
+		this.props.getStocks();
+	}
+
+  componentWillReceiveProps(nextProps) {
+		this.setState({
+			data: nextProps.stocks
+		});
+	}
 
   render() {
 
@@ -29,10 +51,10 @@ class Dashboard extends Component {
         <div className="lft col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <Mystock/>
         </div>
-        <div className="lft col-xs-12 col-sm-12 col-md-6 col-lg-6">
+{/*         <div className="lft col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <Chart/>
         </div>
-        
+ */}        
         
 
       </div>
@@ -40,4 +62,4 @@ class Dashboard extends Component {
   }
 }
 
-export default Dashboard;
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
